@@ -1,0 +1,46 @@
+.m-custom-accordion{
+        .catab-article{
+         
+            .catab-header{
+                position: relative;
+                cursor: pointer;
+                font-size: 15px;
+                @include add-border(1px, $pale-grey, 'bottom');
+                font-weight: bold;
+                line-height: 17px;
+                padding: 15px 30px 15px 0px;
+        
+                &::after{
+                    content: '';
+                    position: absolute;
+                    right: 10px;
+                    top: 12px;
+                    border: solid $grey;
+                    border-width: 0 3px 3px 0;
+                    display: inline-block;
+                    padding: 3px;
+                    transform: rotate(45deg);
+                }
+            }
+         
+            &.active{
+                @include add-border(1px, $pale-grey, 'bottom');
+    
+                .catab-header{
+                    &::after{
+                        top: 17px;
+                        transform: rotate(-135deg);
+                    }
+                }
+
+                .catab-content{
+                    display: block;
+                }
+            }
+        }
+    
+        .catab-content{
+            display: none;
+            padding: 15px;
+        }
+    }

@@ -1,0 +1,31 @@
+.o-blog-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    padding: 70px 0px;
+
+    .m-blog-item--vertical{
+        flex-basis: 100%;
+        margin: 10px 0px;
+    }
+
+
+    @include breakpoints(medium){
+        .m-blog-item--vertical{
+            flex-basis: calc(50% - 20px);
+            margin: 10px;
+        }
+    }
+
+    @include breakpoints(large){
+        @include wrapper(1000px);
+        
+        .m-blog-item--vertical{
+            flex-basis: calc(33.333% - 20px);
+            margin: 10px;
+        }
+    }
+
+
+}

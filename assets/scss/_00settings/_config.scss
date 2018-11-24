@@ -1,0 +1,40 @@
+$Cera: 'Cera', Arial, Helvetica, sans-serif;
+
+$default-browser-font-size: 16px !global;
+
+$primary-color: #E7D393;
+$black:#222328;
+$dark-grey:#3A3D4B;
+$grey: #5b5b5f;
+$lightgrey: #8C8F94;
+$pale-grey: #efefef;
+$range-line-grey: #E5E5E5;
+$dark-grey: #606060;
+$white: #FFFFFF;
+$blue: #43509A;
+$light-yellow: #F0ECDD;
+$yellow: $primary-color;
+$dark-yellow: #B4A473;
+$selects-yellow: #C8B26C;
+$pale-red: #E3587F;
+$dark-red: #D9194F;
+$pale-green:  #3FD37D;
+$dark-green: #264233;
+$selects-grey: #e3e3e3;
+
+$large-wrap: 1170px;
+
+$breakpoints: (
+  xsmall: 0px,
+  small: 320px,
+  medium: 768px,
+  large: 1024px,
+  xlarge: 1400px
+);
+
+$wrapper-size-1: 1170px;
+
+$menu-break: 1120px;
+$menu-break-mobile: $menu-break - 1px;
+
+$cliente-menu-break: 800px;

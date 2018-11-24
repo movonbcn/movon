@@ -1,0 +1,4 @@
+.a-divider{
+    display:block;
+    @include add-border(2px, #EFF1F1, 'bottom');
+}

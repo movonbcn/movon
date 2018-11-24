@@ -1,0 +1,59 @@
+
+.m-table-container {
+    overflow-x:auto;
+    width: 100%;
+}
+
+.m-table-rwd{
+    font-size:14px;
+    color: $grey;
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    &.wauto {
+        min-width: 100%;
+    }
+
+    td, th{
+        padding: 10px 0px;
+        //border-bottom: 1px solid $selects-grey;
+    }
+
+    th{
+        background: $white;
+        color: $grey;
+        font-weight: normal;
+        text-align: left;
+        font-size: 13px;
+        &:first-child {
+        //    width : 200px;
+        }
+    }
+
+    td {
+        text-align : left;
+        background: $white;
+        color: $black;
+        vertical-align: middle;
+        a {
+            font-size: inherit;
+        }
+    }
+
+    tr {
+        @include add-border(1px, $pale-grey, 'bottom');
+        &:hover {
+            td{
+                background: rgba($selects-grey,.2);
+            }
+        }
+        &:nth-child(odd) td{
+            background-color: #fafafa;
+        }
+    }
+    
+}
+

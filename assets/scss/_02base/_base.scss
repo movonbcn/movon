@@ -1,0 +1,79 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-size: $default-browser-font-size;
+    font-family: $Cera;
+    position: relative;
+}
+
+.center{
+    text-align: center;
+}
+
+.w100{
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+main{
+    display: block;
+}
+
+.fr{
+    float: right;
+}
+
+.clearfix{
+    @include clearfix;
+}
+
+.red{
+    color: $pale-red;
+}
+
+.yellow{
+    color: $yellow;
+}
+
+
+b,strong{
+    font-weight: bold;
+}
+
+.hide-mobile{
+    display: none;
+    @include breakpoints(medium){
+        display: block;
+    }
+}
+.hide-tablet{
+    display: block;
+    @include breakpoints(medium){
+        display: none;
+    }
+}
+
+
+.w-content{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    margin: 0 auto;
+    
+    @include breakpoints($wrapper-size-1){
+        @include wrapper(100%);
+        max-width: $wrapper-size-1;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    @include breakpoints($wrapper-size-1 + 40px){
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}

@@ -1,0 +1,43 @@
+.m-pagination{
+
+    li{
+        display: inline-block;
+        vertical-align: top;
+        list-style: none;
+        padding: 5px;
+        font-size: 20px;
+        @include breakpoints(medium){
+            font-size: 25px;
+        }
+    }
+    a{
+        font-size: 20px;
+        color: #9a999e;
+        text-decoration: none;
+        @include breakpoints(medium){
+            font-size: 25px;
+        }
+
+        &.active,
+        &:hover{
+            color: #211915;
+        }
+    }
+
+    .next {
+        float: none;
+    }
+}
+
+.numlink {    
+    margin: 10px 0;
+    display: inline-block;
+    a {
+       padding: 5px 10px; 
+       border: 1px solid #333;
+       margin: 0 4px;
+        
+       text-decoration: none;
+    }
+    
+}

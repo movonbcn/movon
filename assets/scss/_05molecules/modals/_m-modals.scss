@@ -1,0 +1,169 @@
+.modal{
+    position: fixed;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    .grid-md-6 {
+        &:nth-child(odd) {
+            padding: 0 5px 0 0;
+        }
+        &:nth-child(even) {
+            padding: 0 0 0 5px;
+        }
+        
+    }
+    
+    .modal-container{
+        background-color: rgba(0,0,0,0.5);
+        position: relative;
+        width: 100%;
+        min-height: 100%;
+        overflow-y: auto;
+    }
+
+
+    .modal-wrapper{
+        border-radius: 9px;
+        background-color: #FFFFFF;
+        box-shadow: 0 24px 44px 10px rgba(0,0,0,0.11);
+        padding: 10px;
+        width: 80%;
+        margin: 10%;
+        top: -30px;
+        position: absolute;
+        
+        @include breakpoints(750px){
+            width: 710px;
+            margin-left:-360px;
+            left: 50%;
+            transform: translate(0%, 0%);
+        }
+
+        @include breakpoints(1050px){
+            width: 1000px;
+            margin-left:-500px;
+            left: 50%;
+            transform: translate(0%, 0%);
+        }
+        
+        .modal-header {
+            padding: 20px 40px 14px;
+            border-bottom: 1px solid #eaeaea;
+            text-align: center;
+        }
+        .modal-content{
+            border-radius: 4px;
+            padding: 0;
+            text-align: left;
+            position: relative;
+            margin: 0 auto;
+            background-color: #ffffff;
+            max-width: 980px;
+            width: 100%;
+
+            box-shadow: 0 24px 44px 10px rgba(0,0,0,0.11);
+            h2{
+                color: $lightgrey;
+                font-size: 25px;
+                text-transform: uppercase;
+            }
+
+            h3{
+                color: #000;
+                font-family: $Cera;
+                font-size: 22px;
+                font-weight: 600;
+
+            }
+
+            &.legals{
+                h3{
+                    font-family: $Cera;
+                }
+            }
+
+            .message{
+                color: $black;
+                font-size: 18px;
+                padding: 10px 0px 0px;
+            }
+
+            .plain-text{
+                padding: 20px 40px;
+            }
+
+        } 
+
+        .modal-main {
+            padding: 20px 40px;
+            p {
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+
+        .modal-footer {
+            padding: 20px 40px;
+            border-top: 1px solid #eaeaea;
+            text-align: center;
+            &:after {
+                display: block;
+                content:'';
+                clear: both;
+            }
+            .btn {
+                float: left;
+                &:last-child {
+                    float: right;
+                }
+            }
+        }          
+    }
+
+    &.open{
+        display: block;
+        animation: fadeInModalBg 0.3s forwards ease-in-out;
+        .modal-wrapper{
+            animation: openModal 0.3s forwards ease-in-out;
+            @include breakpoints(750px){
+                animation: openModal 0.3s forwards ease-in-out;
+            }
+        }
+    }
+
+    &.close{
+        display: none;
+        animation: fadeOutModalBg 0.3s forwards ease-in-out;
+        .modal-wrapper{
+            animation: closeModal 0.3s forwards ease-in-out;
+        }
+    }
+}
+
+@keyframes openModal {
+    0% { opacity: 0; transform: scale(1); }
+    40% { opacity: 0; transform: scale(0.3); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes closeModal {
+    0% { opacity: 1; transform: scale(1); }
+    70% { opacity: 0; transform: scale(0.3); }
+    100% { opacity: 0; transform: scale(0); }
+}
+
+@keyframes fadeInModalBg {
+    0% { background-color: rgba(0, 0, 0, 0); }
+    40% { background-color: rgba(0, 0, 0, 0.5); }
+    100% { background-color: rgba(0, 0, 0, 0.5); }
+}
+
+@keyframes fadeOutModalBg {
+    0% { background-color: rgba(0, 0, 0, 0.5); }
+    50% { background-color: rgba(0, 0, 0, 0.5); }
+    100% { background-color: rgba(0, 0, 0, 0); }
+}

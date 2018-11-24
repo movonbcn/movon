@@ -1,0 +1,133 @@
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+
+
+/* style 2 */
+.inputfile-img + label {
+    border: 1px solid #CCC;
+    padding: 10px 13px;
+    border-radius: 3px;
+    max-width: 220px;
+    overflow: hidden;
+    span{
+        color: $primary-color;
+        font-family: $Cera;
+        font-size: 13px;
+        letter-spacing: 1.5px;
+        line-height: 13px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    &:before{
+        content: '';
+        @include inline-block;
+        width: 18px;
+        height: 18px;
+        background-image: url('../img/ui/image.svg');
+        background-repeat: no-repeat;
+        background-size: 18px auto;
+        opacity: 0.4;
+        vertical-align: -4px;
+        margin-right: 5px;
+    }
+}
+
+
+/* style 6 */
+
+.inputfile-6 + label {
+    color: $grey;
+}
+
+.inputfile-6 + label {
+    border: 1px solid $selects-grey;
+    background-color: $white;
+    padding: 0;
+    height: 46px;
+    font-weight: normal;
+    position: relative;
+    padding-top: 0px !important;
+}
+
+.inputfile-6:focus + label,
+.inputfile-6.has-focus + label,
+.inputfile-6 + label:hover {
+    @include clearfix;
+    border-color: $selects-grey
+}
+
+.inputfile-6 + label span,
+.inputfile-6 + label strong {
+    padding: 12px 10px;
+    line-height: 20px;
+    /* 10px 20px */
+}
+
+.inputfile-6 + label span {
+    width: 200px;
+    min-height: 1.5em;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.inputfile-6 + label strong {
+    height: 100%;
+    background-color: $primary-color;
+    color: $white;
+    display: inline-block;
+    font-weight: 300;
+    line-height: 16px;
+    padding: 10px 20px 9px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.inputfile-6:focus + label strong,
+.inputfile-6.has-focus + label strong,
+.inputfile-6 + label:hover strong {
+    background-color: $primary-color;
+}
+
+@media screen and (max-width: 50em) {
+	.inputfile-6 + label strong {
+		display: block;
+	}
+}

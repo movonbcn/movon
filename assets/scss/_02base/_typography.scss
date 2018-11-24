@@ -1,0 +1,50 @@
+h1{
+    @include text-format(48px, $Cera, $black);
+    line-height: rem-calc(51px);
+    font-weight: bold;
+}
+h2{
+    @include text-format(36px, $Cera, $black);
+    line-height: rem-calc(42px);
+    font-weight: bold;
+}
+h3{
+    @include text-format(29px, $Cera, $black);
+    line-height: rem-calc(39px);
+    font-weight: bold;
+}
+h4{
+    @include text-format(26px, $Cera, $black);
+    line-height: rem-calc(36px);
+    font-weight: bold;
+}
+h5{
+    @include text-format(22px, $Cera, $black);
+    line-height: rem-calc(28px);  
+    font-weight: bold;
+}
+h6{
+    @include text-format(17px, $Cera, $black);
+    line-height: rem-calc(22px);  
+    font-weight: bold;
+}
+p{
+    @include text-format(16px, $Cera, $black);
+    line-height: rem-calc(20px);
+}
+label{
+    @include text-format(16px, $Cera, $black);
+    line-height: rem-calc(20px);
+}
+a{
+    color: $black;
+    line-height: rem-calc(20px);  
+}
+
+i, em {
+    font-style: italic;
+}
+
+b, strong{
+    font-weight: bold;
+}

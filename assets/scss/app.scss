@@ -1,0 +1,62 @@
+// Settings
+@import	'_00settings/_config.scss';
+
+// Tools
+@import	'_01tools/_functions.scss'; 
+@import '_01tools/_mixins.scss';
+@import '_01tools/_placeholders.scss';
+
+// Base
+@import	'_02base/_normalize.scss';
+@import	'_02base/_base.scss';
+@import	'_02base/_fonts.scss';
+@import	'_02base/_typography.scss';
+
+// Vendor
+@import	'_03vendor/_lightgallery.scss';
+@import	'_03vendor/_lity.scss';
+@import	'_03vendor/_datepicker.scss';
+
+// Atoms
+@import	'_04atoms/_a-buttons.scss';
+@import '_04atoms/_a-dividers.scss';
+@import '_04atoms/_a-icons.scss';
+@import '_04atoms/_a-section-header.scss';
+@import '_04atoms/_inputs.scss';
+@import '_04atoms/_labels.scss';
+@import	'_04atoms/_links.scss';
+@import	'_04atoms/_lists.scss';
+@import	'_04atoms/_margins.scss';
+@import	'_04atoms/_paddings.scss';
+
+// Molecules
+@import	'_05molecules/_m-custom-accordion.scss';
+@import	'_05molecules/_custom-file-upload.scss';
+
+
+@import	'_05molecules/animation/_animation.scss';
+
+//@import	'_05molecules/forms/_m-form--one-line.scss';
+
+@import '_05molecules/items/_m-travel-item.scss';
+
+@import	'_05molecules/modals/_m-modals.scss';
+
+@import	'_05molecules/navigation/_m-burguer-menu.scss';
+@import	'_05molecules/navigation/_m-menu--primary.scss';
+@import	'_05molecules/navigation/_m-menu--social.scss';
+@import	'_05molecules/navigation/_m-pagination.scss';
+
+@import	'_05molecules/tables/_m-custom-table-responsive.scss';
+
+// Organisms
+@import '_06organisms/_footer.scss';
+@import	'_06organisms/_grid.scss';
+@import	'_06organisms/_header.scss';
+
+@import	'_06organisms/containers/_o-travel-container.scss';
+
+@import	'_06organisms/hero/_o-hero.scss';
+
+// Pages
+@import	'_07pages/_p-home-page.scss';

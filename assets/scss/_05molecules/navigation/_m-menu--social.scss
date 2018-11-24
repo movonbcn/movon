@@ -1,0 +1,17 @@
+.m-menu--social{
+    li{
+        display: inline-block;
+        vertical-align: middle;
+        list-style: none;
+        margin-right: 5px;
+        &.facebook{
+            width: 19px;
+        }
+        &.google{
+            width: 26px;
+        }
+        &.instagram{
+            width: 22px;     
+        }
+    }
+}

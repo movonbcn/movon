@@ -1,0 +1,59 @@
+footer{
+    background-color: #222328;
+    padding: 85px 20px 115px;
+
+    .logo{
+        max-width: 156px;
+    }
+
+    .footer-catch{
+        color: $lightgrey;
+        font-family: $Cera;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 378px;
+        margin: 30px 0px;
+    }
+
+    .footer-header{
+        opacity: 0.5;	
+        color: $white;	
+        font-family: $Cera;
+        font-weight: bold;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 15px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .m-menu--social{
+        margin-bottom: 20px;
+    }
+
+    .phone{
+        color: $white;	
+        font-family: $Cera;	
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 1.23px;
+        line-height: 23px;
+        display: block;
+    }
+
+    .fn-col1{
+        padding-top: 45px;
+    }
+
+    @include breakpoints(medium){
+        .fn-col3{
+            padding-top: 45px;
+        }
+
+        .fn-col2{
+            padding-top: 65px;
+        }
+    }
+
+}

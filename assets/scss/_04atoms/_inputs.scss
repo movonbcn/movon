@@ -1,0 +1,85 @@
+input, textarea{
+    @include add-border(2px, $selects-grey, 'all');
+    width: 100%;
+    padding: 5px;
+    line-height: 20px;
+    font-size: 15px;
+    color: #3a3939;
+    font-family: $Cera;
+    &::placeholder {
+        font-size: 14px;
+        color: $grey; 
+    }
+
+    &:focus {
+        outline: none;
+    }
+    
+}
+
+textarea{
+    min-height: 100px;
+}
+
+select{
+    @include add-border(1px, $selects-grey, 'all');
+    width: 100%;
+    padding: 7px 8px 8px;
+    &:focus {
+        outline: none;
+    }
+}
+
+input[type='button'],
+input[type='submit']{
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #ffffff;
+}
+
+
+input[type="checkbox"] {
+    display: none;
+    
+    &:checked + span::before,
+    &:checked + span::after {
+      display: block;
+    }
+
+    & + span {
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        border: 1px solid $selects-yellow;
+        background-color: $white;
+        margin-right: 3px;
+        vertical-align: middle;
+        margin-top: -2px;
+        position: relative;
+        
+        &::before,
+        &::after {
+        content: "";
+        position: absolute;
+        display: none;
+        background: $selects-yellow;
+        height: 2px;
+        left: 6px;
+        bottom: 4px;
+        transform-origin: 1px 1px;
+        }
+
+        &::before {
+        transform: rotate(-45deg);
+        width: 12px;
+        }
+
+        &::after {
+        transform: rotate(-135deg);
+        width: 7px;
+        }
+        
+    }
+
+}

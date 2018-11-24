@@ -1,0 +1,96 @@
+%a-button--small{
+    display: inline-block;
+    vertical-align: middle;
+    color: #FFFFFF;	
+    font-family: $Cera;	
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 11px 15px;
+    min-width: 100px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+%a-button--medium{
+    display: inline-block;
+    vertical-align: middle;
+    color: #FFFFFF;	
+    font-family: $Cera;	
+    font-size: 18px;
+    padding: 15px 22px;
+    min-width: 142px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+%a-button--big{
+    display: inline-block;
+    vertical-align: middle;
+    color: #FFFFFF;	
+    font-family: $Cera;	
+    font-size: 14px;
+    padding: 23px 30px;
+    min-width: 208px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+%a-button--growing{
+    @extend %a-button--small;
+
+    @include breakpoints(medium){
+        font-size: 14px;
+        padding: 23px 30px;
+        min-width: 183px;
+    }
+}
+
+
+.a-button--small--yellow{
+    @extend %a-button--small;
+    background-color: $yellow;
+}
+
+.a-button--medium--yellow{
+    @extend %a-button--medium;
+    background-color: $yellow;
+}
+
+.a-button--big--yellow{
+    @extend %a-button--big;
+    background-color: $yellow;
+}
+
+.a-button--small--black{
+    @extend %a-button--small;
+    background-color: $black;
+}
+
+.a-button--medium--black{
+    @extend %a-button--medium;
+    background-color: $black;
+}
+
+.a-button--big--black{
+    @extend %a-button--big;
+    background-color: $black;
+}
+
+.a-button--growing--reverse{
+    @extend %a-button--growing;
+    background-color: transparent;
+    border: 2px solid $black;
+    color:  $black;
+}
+
+.a-button--growing--red{
+    @extend %a-button--growing;
+    background-color: $dark-red;
+}
+
+.a-button--normal{
+    text-transform: none;
+}
