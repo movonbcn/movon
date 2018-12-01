@@ -5,7 +5,7 @@ html, body{
 
 body{
     font-size: $default-browser-font-size;
-    font-family: $Cera;
+    font-family: $JosefineSans;
     position: relative;
 }
 
@@ -32,15 +32,6 @@ main{
 .clearfix{
     @include clearfix;
 }
-
-.red{
-    color: $pale-red;
-}
-
-.yellow{
-    color: $yellow;
-}
-
 
 b,strong{
     font-weight: bold;

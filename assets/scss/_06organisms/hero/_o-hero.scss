@@ -1,9 +1,44 @@
 %o-hero{
-    @include gradient-over-image('bottom', #000000, #000000, 0.33);
-    max-height: 710px;
+    @include gradient-over-image('bottom', #fff, #fff, 0.33);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
 
+}
+
+#o-hero--home{
+    @extend %o-hero;
+    height: calc(100vh - 72px);
+    max-height: 720px;
+
+    .oh-content{
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        h1{
+            font-size: 28px;
+            color: $primary-color;
+            line-height: 34px;
+            .secondary{
+                color: $secondary-color;
+            }
+
+            @include breakpoints(medium){
+                font-size: 47px;
+                line-height: 51px;
+            }
+
+            @include breakpoints(large){
+                font-size: 72px;
+                line-height: 77px;
+            }
+        }
+    }
 }

@@ -1,0 +1,17 @@
+.o-prices-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding: 70px 0px;
+
+    .m-prices-item{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        
+        @include breakpoints(768px){
+            flex-basis: calc(31.5%);
+            margin-bottom: 0px;
+        }
+    }
+}

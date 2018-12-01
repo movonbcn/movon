@@ -15,7 +15,6 @@
 // Vendor
 @import	'_03vendor/_lightgallery.scss';
 @import	'_03vendor/_lity.scss';
-@import	'_03vendor/_datepicker.scss';
 
 // Atoms
 @import	'_04atoms/_a-buttons.scss';
@@ -38,6 +37,7 @@
 
 //@import	'_05molecules/forms/_m-form--one-line.scss';
 
+@import '_05molecules/items/_m-prices-item.scss';
 @import '_05molecules/items/_m-travel-item.scss';
 
 @import	'_05molecules/modals/_m-modals.scss';
@@ -54,6 +54,7 @@
 @import	'_06organisms/_grid.scss';
 @import	'_06organisms/_header.scss';
 
+@import	'_06organisms/containers/_o-prices-container.scss';
 @import	'_06organisms/containers/_o-travel-container.scss';
 
 @import	'_06organisms/hero/_o-hero.scss';

@@ -1,35 +1,36 @@
 .m-menu--primary{
-    display: inline-block;
-    vertical-align: middle;
-    &>ul>li{
+    
+    @include breakpoints($menu-break){
         display: inline-block;
         vertical-align: top;
-        list-style: none;
-
-        &>a{
-            font-size: 16px;	
-            line-height: 20px;
-            color: $dark-grey;
-            text-decoration: none;
-            font-weight: bold;
-            display: block;
-            padding: 23px 15px 23px;
-            text-align: center;
-            opacity: 0.6;
-
-            &:hover,
-            &.active{
-                opacity: 1;
-            }
-        }
-    
-    
-        &.dropdown-button{
-            &:hover{
-                &>a{
-                    padding: 23px 15px 30px;
-                }
-            }
+        float: right;
+        &>ul>li{
+            display: inline-block;
+            vertical-align: top;
+            list-style: none;
         }
     }
+
+    li{
+        list-style: none;
+    }
+
+    a{
+        font-size: 16px;	
+        line-height: 20px;
+        color: $primary-color;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        padding: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $JosefineSans;
+        
+        &:hover,
+        &.active{
+            opacity: 0.6;
+        }
+    }
+    
 }
