@@ -1,5 +1,5 @@
 // BURGUER MENU ICON
-#m-burger-menu {
+#m-menu--burger{
   width: 22px;
   height: 16px;
   display: inline-block;
@@ -14,13 +14,13 @@
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   cursor: pointer;
-  margin: 28px 0px;
+  margin: 18px;
   span {
     display: block;
     position: absolute;
     height: 2px;
     width: 100%;
-    background: $black;
+    background: $primary-color;
     border-radius: 0px;
     opacity: 1;
     left: 0;

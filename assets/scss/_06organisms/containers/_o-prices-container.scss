@@ -3,9 +3,36 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between; 
-    padding: 70px 0px;
+    padding-bottom: 70px;
 
     .m-prices-item{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        
+        @include breakpoints(medium){
+            display:flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            text-align: left;
+
+            .mpi-content{
+                flex-basis: 35%;
+            }
+            .mpi-img{
+                flex-basis: 55%;
+            }
+        }
+    }
+}
+
+.o-prices-container--home{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding: 70px 0px;
+
+    .m-prices-item--home{
         flex-basis: 100%;
         margin-bottom: 20px;
         

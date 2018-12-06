@@ -1,0 +1,46 @@
+.m-menu--mobile{
+    background: #e4eff0;
+    position: relative;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    @include clearfix;
+
+    .logo{
+        @include inline-block;
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        margin: 6px;
+        width: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #m-menu--burger{
+        float:right;
+    }
+
+    @include breakpoints($menu-break){
+        display: none;
+    }
+}
+
+.m-menu--mobile--bg{
+    display: none;
+
+    &.menu-open{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+        background-color: $grey;
+        opacity: 0.67;
+    }
+}

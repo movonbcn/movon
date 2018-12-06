@@ -45,6 +45,7 @@
 @import	'_05molecules/navigation/_m-burguer-menu.scss';
 @import	'_05molecules/navigation/_m-menu--primary.scss';
 @import	'_05molecules/navigation/_m-menu--social.scss';
+@import	'_05molecules/navigation/_m-menu--mobile.scss';
 @import	'_05molecules/navigation/_m-pagination.scss';
 
 @import	'_05molecules/tables/_m-custom-table-responsive.scss';
@@ -61,3 +62,5 @@
 
 // Pages
 @import	'_07pages/_p-home-page.scss';
+@import	'_07pages/_p-travels-page.scss';
+@import	'_07pages/_p-prices-page.scss';

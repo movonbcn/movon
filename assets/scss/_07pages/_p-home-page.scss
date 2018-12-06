@@ -4,7 +4,8 @@
         @include breakpoints(600px){
             display: flex;
             justify-content: space-between;
-            
+            padding: 50px 0px;
+
             &.phsc1-right{
                 flex-direction: row-reverse;                
             }
@@ -13,13 +14,7 @@
                 flex-direction: row;                
             }
 
-            .phsc1-content{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                flex-basis: 40%;
-            }
-
+            .phsc1-content,
             .phsc1-img{
                 display: flex;
                 flex-direction: column;
@@ -32,5 +27,4 @@
 
 .p-home-travel-prices{
     background-image: url('../img/travels-bg.jpg');
-
 }

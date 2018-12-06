@@ -1,15 +1,32 @@
 header{
     background-color: #e4eff0;
-    width: 100%;
-    box-shadow: none;
 
+    @include breakpoints($menu-break-mobile, no){
+        position: fixed; 
+        top:0;
+        bottom: 0;
+        right: -275px;
+        width: 275px;
+        transition: all 0.25s ease-in-out;
+        z-index:101;
+        padding: 30px;
+        
+        &.menu-open{
+            right: 0px;
+
+        }
+
+    }
     @include breakpoints($menu-break){
+        width: 100%;
+        box-shadow: none;
         padding: 10px 0px;
     }
 
     .logo{
         width: 100px;
-      
+        display: none;
+
         @include breakpoints($menu-break){
             display: inline-block;
         }

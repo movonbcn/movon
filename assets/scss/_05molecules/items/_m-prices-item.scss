@@ -8,6 +8,36 @@
     justify-content: space-between;
 
     h2{
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    li{
+        list-style: none;
+        font-size: 21px;
+        line-height: 25px;
+        color: $secondary-color;
+        padding: 5px 0px;
+    }
+    h3{
+        a{
+            font-size: 32px;
+            line-height: 36px;
+            text-decoration: none;
+        }
+    }
+}
+
+.m-prices-item--home{
+    text-align: center;
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2{
         font-size: 48px;
         line-height: 52px;
     }
