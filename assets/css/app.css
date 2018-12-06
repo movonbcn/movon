@@ -2946,11 +2946,6 @@ label {
   background: #e4eff0;
   position: relative;
   height: 55px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
   *zoom: 1; }
   .m-menu--mobile:before, .m-menu--mobile:after {
     content: " ";
