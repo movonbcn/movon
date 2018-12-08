@@ -1,8 +1,51 @@
 footer{
-    background-color: #222328;
-    padding: 85px 20px 115px;
-
-    .logo{
-        max-width: 156px;
+    background-color: $secondary-color;
+    padding: 50px 20px;
+    
+    .w-content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
     }
+
+
+    .map{
+        margin:12px 0px;
+        height:400px;
+
+        @include breakpoints(medium){
+            flex-basis: 40%;
+        }
+    }
+    .footer-info{
+        padding: 40px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include breakpoints(medium){
+            flex-basis: 40%;
+            text-align: left;
+        }
+
+        h2{
+            color: $white;
+            font-size: 24px;
+        }
+        p{
+            color: $white;
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.socket{
+    background-color: $primary-color;
+    color: $white;
+    padding: 10px;
+    text-align: center;
 }

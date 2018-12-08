@@ -3052,10 +3052,59 @@ label {
       background-color: #fafafa; }
 
 footer {
-  background-color: #222328;
-  padding: 85px 20px 115px; }
-  footer .logo {
-    max-width: 156px; }
+  background-color: #2b8385;
+  padding: 50px 20px; }
+  footer .w-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  footer .map {
+    margin: 12px 0px;
+    height: 400px; }
+    @media only screen and (min-width: 768px) {
+      footer .map {
+        -ms-flex-preferred-size: 40%;
+        flex-basis: 40%; } }
+  footer .footer-info {
+    padding: 40px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    @media only screen and (min-width: 768px) {
+      footer .footer-info {
+        -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+        text-align: left; } }
+    footer .footer-info h2 {
+      color: #FFFFFF;
+      font-size: 24px; }
+    footer .footer-info p {
+      color: #FFFFFF;
+      font-size: 17px;
+      margin-bottom: 20px; }
+
+.socket {
+  background-color: #173f40;
+  color: #FFFFFF;
+  padding: 10px;
+  text-align: center; }
 
 .grid-row {
   *zoom: 1; }
@@ -3378,12 +3427,12 @@ header {
         -ms-flex-preferred-size: calc(48%);
         flex-basis: calc(48%); } }
 
-#o-hero--home {
+#o-hero--home, #o-hero--travels, #o-hero--prices {
   position: relative;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
-  #o-hero--home::before {
+  #o-hero--home::before, #o-hero--travels::before, #o-hero--prices::before {
     content: "";
     position: absolute;
     top: 0;
@@ -3430,6 +3479,24 @@ header {
         #o-hero--home .oh-content h1 {
           font-size: 72px;
           line-height: 77px; } }
+
+#o-hero--travels {
+  height: calc(100vh - 72px);
+  max-height: 520px;
+  background-image: url("../img/travels/Pueblo-espanol.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 50px; }
+
+#o-hero--prices {
+  height: calc(100vh - 72px);
+  max-height: 520px;
+  background-image: url("../img/travels/Plaza-Espana.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 50px; }
 
 .p-home-sec1 {
   padding: 50px 0px; }
