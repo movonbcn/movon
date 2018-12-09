@@ -13,7 +13,12 @@
 })();
 
 (function(){
-    $('#o-hero--home').vide('https://movocbcn.000webhostapp.com/assets/video/movon.mp4', {
+    
+    var base_url = (window.location.host == 'localhost') ? window.location.origin + "/movon" :  window.location.origin;
+
+    var url = base_url+'/assets/video/movon.mp4';
+
+    $('#o-hero--home').vide(url, {
         volume: 1,
         playbackRate: 1,
         muted: true,
